@@ -7,7 +7,7 @@ import Database from "better-sqlite3";
 import fs from "fs";
 
 const PORT = 3000;
-const db = new Database("podforge.db");
+const db = new Database("easypodcast.db");
 
 // Initialize DB
 db.exec(`

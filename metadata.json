@@ -1,5 +1,5 @@
 {
-  "name": "PodForge AI",
+  "name": "easyPodcast",
   "description": "AI-powered podcast recording and editing platform for creators. Record, enhance, and publish with automatic subtitles and AI audio cleanup.",
   "requestFramePermissions": [
     "camera",

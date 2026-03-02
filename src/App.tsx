@@ -63,7 +63,7 @@ const LandingPage = ({ onStart }: { onStart: () => void }) => {
             <div className="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center">
               <Mic className="w-5 h-5 text-white" />
             </div>
-            <span className="font-bold text-xl tracking-tight">PodForge<span className="text-emerald-500">AI</span></span>
+            <span className="font-bold text-xl tracking-tight">easyPodcast</span>
           </div>
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-400">
             <a href="#features" className="hover:text-white transition-colors">Features</a>
@@ -243,9 +243,9 @@ const LandingPage = ({ onStart }: { onStart: () => void }) => {
             <div className="w-6 h-6 bg-emerald-600 rounded flex items-center justify-center">
               <Mic className="w-4 h-4 text-white" />
             </div>
-            <span className="font-bold">PodForge AI</span>
+            <span className="font-bold">easyPodcast</span>
           </div>
-          <p className="text-zinc-500 text-sm">© 2026 PodForge AI. All rights reserved.</p>
+          <p className="text-zinc-500 text-sm">© 2026 easyPodcast. All rights reserved.</p>
           <div className="flex gap-6 text-sm text-zinc-400">
             <a href="#" className="hover:text-white">Privacy</a>
             <a href="#" className="hover:text-white">Terms</a>
@@ -305,7 +305,7 @@ const Dashboard = ({ onHome }: { onHome: () => void }) => {
       password: "123456",
       videoUrl: "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
       subtitles: [
-        { id: '1', startTime: 0, endTime: 5, text: "Welcome to the PodForge AI demo." },
+        { id: '1', startTime: 0, endTime: 5, text: "Welcome to the easyPodcast demo." },
         { id: '2', startTime: 5, endTime: 10, text: "This is a sample template to test all features." },
         { id: '3', startTime: 10, endTime: 15, text: "You can edit these subtitles right now!" },
       ]
@@ -348,7 +348,7 @@ const Dashboard = ({ onHome }: { onHome: () => void }) => {
             <div className="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center">
               <Mic className="w-5 h-5 text-white" />
             </div>
-            <span className="font-bold text-lg">PodForge</span>
+            <span className="font-bold text-lg">easyPodcast</span>
           </button>
           
           <Button onClick={createNewProject} className="w-full mb-2">
@@ -633,7 +633,7 @@ const Editor = ({ onBack, onHome }: { onBack: () => void, onHome: () => void }) 
 
   // Use currentProject subtitles or fallback to mock if empty
   const subtitles = currentProject?.subtitles || [
-    { id: '1', startTime: 0, endTime: 5, text: "Welcome to the PodForge AI podcast." },
+    { id: '1', startTime: 0, endTime: 5, text: "Welcome to the easyPodcast podcast." },
     { id: '2', startTime: 5, endTime: 10, text: "Today we're talking about the future of AI." },
     { id: '3', startTime: 10, endTime: 15, text: "Let's dive into how creators are using these tools." },
   ];
