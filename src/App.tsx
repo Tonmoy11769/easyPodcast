@@ -10,6 +10,7 @@ import {
 import { useStore, type Project } from './store/useStore';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
+import { Analytics } from '@vercel/analytics/react';
 
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -1473,8 +1474,18 @@ export default function App() {
   const [started, setStarted] = useState(false);
 
   if (!started) {
-    return <LandingPage onStart={() => setStarted(true)} />;
+    return (
+      <>
+        <LandingPage onStart={() => setStarted(true)} />
+        <Analytics />
+      </>
+    );
   }
 
-  return <Dashboard onHome={() => setStarted(false)} />;
+  return (
+    <>
+      <Dashboard onHome={() => setStarted(false)} />
+      <Analytics />
+    </>
+  );
 }
